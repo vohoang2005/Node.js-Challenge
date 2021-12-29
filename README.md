@@ -40,3 +40,4 @@ https://user-images.githubusercontent.com/37889335/147653234-8eb45b0a-2ccb-4cb8-
 
 #### Create by: Chuong Vo
 #### Link to repo: https://github.com/vohoang2005/Node.js-Challenge
+#### Direct link to video: https://vimeo.com/660886477
