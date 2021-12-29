@@ -128,12 +128,12 @@ const questions = [
     {
         type: 'input',
         name: 'question',
-        message: 'Please leave your phone number or email and Ill get back to you (Required)',
+        message: 'Please leave any comments/suggest for this project. (Required)',
         validate: questionInput => {
             if (questionInput) {
                 return true;
             } else {
-                console.log('Please leave your contact info.');
+                console.log('Please leave any comments/suggest for this project. ');
                 return false;
             }
         }
