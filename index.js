@@ -64,13 +64,6 @@ const questions = [
         type: 'input',
         name: 'contribute',
         message: 'Please provide contribution guidelines. (Required)',
-        when: ({ contributeInput }) => {
-            if (contributeInput) {
-                return true;
-            } else {
-                return false;
-            }
-        },
         validate: contributerInput => {
             if (contributerInput) {
                 return true;
@@ -101,10 +94,10 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'githubUsername',
+        name: 'Username',
         message: 'What is your GitHub Username? (Required)',
-        validate: githubUsernameInput => {
-            if (githubUsernameInput) {
+        validate: UsernameInput => {
+            if (UsernameInput) {
                 return true;
             } else {
                 console.log('Please enter your GitHub username.');
@@ -125,19 +118,6 @@ const questions = [
             }
         }
     },
-    {
-        type: 'input',
-        name: 'question',
-        message: 'Please leave any comments/suggest for this project. (Required)',
-        validate: questionInput => {
-            if (questionInput) {
-                return true;
-            } else {
-                console.log('Please leave any comments/suggest for this project. ');
-                return false;
-            }
-        }
-    }
 ];
 
 // TODO: Create a function to write README file

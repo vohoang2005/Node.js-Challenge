@@ -1,49 +1,50 @@
 // Generate README with inputs from index.js.
-
+// Function to return a message if user doesn't want contributors
 function generateMarkdown(data) {
   return  `
 
 # ${data.title}
 
-## Description of the Project
-### ${data.description}
-<br>
+## table-of-contents 
 
-## Installation Process
-###  ${data.installation}
-<br>
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Test](#test)
+* [Contribute](#contribute)
+* [License](#license)
+* [Question](#question)
 
-## What is the main Usage of this project?
-### ${data.usage}
-<br>
+## [Description](#table-of-contents)
+${data.description}
 
-## How do you test this project?
-### ${data.test}
-<br>
 
-## Please provide a contribution guidelines.
-### ${data.contribute}
-<br>
+## [Installation](#table-of-contents)
+${data.installation}
 
-## License Usage for this project.
-### ${data.license}
-<br>
 
-## Github Username
-### ${data.githubUsername}
-<br>
+## [Usage](#table-of-contents)
+${data.usage}
 
-## Email Address
-### ${data.email}
-<br>
 
-## Reach Out
-### ${data.question}
-<br>
+## [Test](#table-of-contents)
+${data.test}
 
-## If you have any issue or concern, please reach out to me directly at: vohoang2005@gmail.com
+
+## [Contribute](#table-of-contents)
+${data.contribute}
+
+
+## [License](#table-of-contents)
+${data.license}
+
+
+## [Question](#table-of-contents)
+
+You can reach me on GitHub: [GitHub](https://github.com/${data.Username})
+Or contact me directly at: ${data.email}
 
 `;
 }
 
-module.exports = generateMarkdown
+module.exports = generateMarkdown;
